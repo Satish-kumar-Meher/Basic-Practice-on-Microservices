@@ -5,15 +5,15 @@ import {produceMessage} from './kfka'
 
 
 const pub = new Redis({
-    host : "caching-170ccea8-satishmeher-redis.b.aivencloud.com",
+    host : "",
     port : 15341,
-    username:"default",
+    username:"",
     password:""
 })
 const sub = new Redis({
-    host : "caching-170ccea8-satishmeher-redis.b.aivencloud.com",
+    host : "",
     port : 15341,
-    username:"default",
+    username:"",
     password:""
 })
 class SocketServices {
