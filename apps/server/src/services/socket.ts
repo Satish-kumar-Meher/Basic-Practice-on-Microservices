@@ -1,6 +1,6 @@
 import { Server } from "socket.io";
 import Redis from "ioredis"
-import prismaClient from "./prisma";
+// import prismaClient from "./prisma";
 import {produceMessage} from './kfka'
 
 
@@ -8,13 +8,13 @@ const pub = new Redis({
     host : "caching-170ccea8-satishmeher-redis.b.aivencloud.com",
     port : 15341,
     username:"default",
-    password:"AVNS_AvzgUw9qQyjWuyKp5L3"
+    password:""
 })
 const sub = new Redis({
     host : "caching-170ccea8-satishmeher-redis.b.aivencloud.com",
     port : 15341,
     username:"default",
-    password:"AVNS_AvzgUw9qQyjWuyKp5L3"
+    password:""
 })
 class SocketServices {
     private _io:Server
